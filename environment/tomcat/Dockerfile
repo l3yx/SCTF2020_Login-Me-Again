@@ -7,4 +7,7 @@ COPY flag.txt /
 ENV JRE_HOME /jre1.8.0_251
 COPY server.xml /apache-tomcat-8.5.0/conf/server.xml
 RUN rm -rf /apache-tomcat-8.5.0/webapps/* && \
-    mv /ROOT.war /apache-tomcat-8.5.0/webapps/
+    mv /ROOT.war /apache-tomcat-8.5.0/webapps/ && \
+    useradd -m ctfer && \
+    chown -R ctfer /apache-tomcat-8.5.0
+USER ctfer

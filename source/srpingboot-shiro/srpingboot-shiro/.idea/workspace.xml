@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2cd5cea-a7e1-4c60-a6d8-62df53467cd3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syclover/srpingbootshiro/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syclover/srpingbootshiro/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syclover/srpingbootshiro/MyRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syclover/srpingbootshiro/MyRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../environment/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../environment/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../environment/shiro/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../../environment/shiro/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -204,6 +205,7 @@
       <workItem from="1593134917986" duration="4387000" />
       <workItem from="1593171864193" duration="147000" />
       <workItem from="1593239066428" duration="3021000" />
+      <workItem from="1593255386647" duration="1716000" />
     </task>
     <servers />
   </component>
@@ -263,6 +265,10 @@
       <screen x="-1680" y="35" width="1680" height="1050" />
     </state>
     <state width="1125" height="212" key="GridCell.Tab.2.right/0.0.1536.834/-1680.35.1680.1050@-1680.35.1680.1050" timestamp="1593247925923" />
+    <state x="-1160" y="383" key="com.intellij.ide.util.TipDialog" timestamp="1593255399501">
+      <screen x="-1680" y="35" width="1680" height="1050" />
+    </state>
+    <state x="-1160" y="383" key="com.intellij.ide.util.TipDialog/0.0.1536.834/-1680.35.1680.1050@-1680.35.1680.1050" timestamp="1593255399501" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -311,11 +317,6 @@
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.5.RELEASE/spring-webmvc-5.2.5.RELEASE.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.class</url>
           <line>415</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/syclover/srpingbootshiro/LoginController.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.5.RELEASE/spring-webmvc-5.2.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class</url>

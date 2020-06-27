@@ -31,10 +31,11 @@ public class LoginController {
             return "login failure!";
         }
     }
-    @GetMapping("/admin/page")
-    public String admin() {
-        return "admin page";
-    }
+
+//    @GetMapping("/admin/page")
+//    public String admin() {
+//        return "admin page";
+//    }
 
     @PostMapping("/admin/upload")
     public String upload(@RequestParam("file") MultipartFile multipartFile, HttpServletRequest request) {
@@ -53,18 +54,18 @@ public class LoginController {
         //获取到系统路径
         String sysPath = System.getProperty("catalina.home") + "/webapps";
         //生成文件地址
-        String filePath= "/uploads/" + NewFileName;
-        String finalPath = sysPath + filePath;
-        File targetFile = new File(finalPath);
-        if (!targetFile.exists()) {
-            targetFile.mkdirs();
+        String uploadDirPath = sysPath + "/uploads/";
+
+        File targetDir = new File(uploadDirPath);
+        if (!targetDir.exists()) {
+            targetDir.mkdirs();
         }
         try {
-            multipartFile.transferTo(new File(sysPath + filePath));
+            multipartFile.transferTo(new File(uploadDirPath + NewFileName));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        return filePath;
+        return uploadDirPath + NewFileName;
     }
 
     @GetMapping("/login")

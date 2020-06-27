@@ -15,6 +15,7 @@ services:
         container_name: sctf2020shiro
         networks: 
             - sctf2020_network
+        restart: always
         entrypoint: ["/jre1.8.0_251/bin/java","-jar","/sctf2020_jar-0.0.1-SNAPSHOT.jar"]
 
     sctf2020_tomcat:
