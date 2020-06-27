@@ -1,0 +1,10 @@
+FROM ubuntu:16.04
+LABEL maintainer="cL0und <cL0und@Syclover> , leixiao <leixiao@Syclover>"
+ADD apache-tomcat-8.5.0.tar.gz /
+ADD jre-8u251-linux-x64.tar.gz /
+COPY ROOT.war /
+COPY flag.txt /
+ENV JRE_HOME /jre1.8.0_251
+COPY server.xml /apache-tomcat-8.5.0/conf/server.xml
+RUN rm -rf /apache-tomcat-8.5.0/webapps/* && \
+    mv /ROOT.war /apache-tomcat-8.5.0/webapps/

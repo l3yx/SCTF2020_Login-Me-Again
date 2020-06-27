@@ -1,1 +1,5 @@
-# SCTF2020_java-is-jar-and-war
+启动
+`docker-compose up -d --build`
+
+关闭
+`docker-compose down`

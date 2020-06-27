@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>login</title>
+    <meta name="author" content="DeathGhost" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" tppabs="css/style.css" />
+    <style>
+        body{height:100%;background:#16a085;overflow:hidden;}
+        canvas{z-index:-1;position:absolute;}
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/verificationNumbers.js" tppabs="js/verificationNumbers.js"></script>
+    <script src="js/Particleground.js" tppabs="js/Particleground.js"></script>
+    <script>
+        $(document).ready(function() {
+            //粒子背景特效
+            $('body').particleground({
+                dotColor: '#5cbdaa',
+                lineColor: '#5cbdaa'
+            });
+        });
+    </script>
+</head>
+<body>
+<dl class="admin_login">
+    <form action="/doLogin" method="post">
+        <dt>
+            <strong>Management System</strong>
+        </dt>
+        <dd class="user_icon">
+            <input type="text" placeholder="username" class="login_txtbx" name="username" required/>
+        </dd>
+        <dd class="pwd_icon">
+            <input type="password" placeholder="password" class="login_txtbx" name="password" required/>
+        </dd>
+        <!-- <input type="checkbox" name="rememberme" value="remember-me"> -->
+        <dd>
+            <input type="submit" value="login" class="submit_btn"/>
+        </dd>
+    </form>
+</dl>
+</body>
+</html>
